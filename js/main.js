@@ -15,10 +15,10 @@ let contactModal = `<div class="modal fade" id="contactModal" tabindex="-1" role
     </div>`;
 
 // build contact form
-let form = `<form action=" " id="contact-us" class="form-horizontal contact-form">`;
-let formGroup = `<div class="form-group">`;
+let form = `<form action=" " id="contact-us" class="contact-form">`;
+let formGroup = `<div class="form-group row">`;
 let label = `<label for="`;
-let controlLabel = `class="col-sm-2 control-label">`;
+let controlLabel = `class="col-sm-2 col-form-label">`;
 let colDiv = `<div class="col-sm-10">`;
 let input = `<input type="`
 let formControl = `class="form-control" id="`;
