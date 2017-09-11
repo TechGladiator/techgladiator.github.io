@@ -1,3 +1,9 @@
+/*--- Nav Menu ---*/
+
+.nav {
+  display: inline-flex;
+}
+
 /*--- Contact Modal ---*/
 
 .contact-form {
