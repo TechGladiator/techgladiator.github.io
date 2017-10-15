@@ -3,6 +3,7 @@
 body {
   min-width: 320px;
   background: url(../images/codes.svg) no-repeat center center fixed;
+  background-size: cover;
 }
 
 /*--- Nav Menu ---*/
