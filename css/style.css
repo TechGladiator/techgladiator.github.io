@@ -1,11 +1,8 @@
 /*--- Base Styles ---*/
 
-html {
-  background: url(../images/codes.svg) no-repeat center center fixed;
-}
-
 body {
   min-width: 320px;
+  background: url(../images/codes.svg) no-repeat center center fixed;
 }
 
 /*--- Nav Menu ---*/
