@@ -66,3 +66,32 @@ $('.modal-body').append(contactForm);
 $('.contact-us').click(function () {
   $('#contactModal').modal('toggle')
 })
+
+// jQuery form validation - https://jqueryvalidation.org/
+$('#contact-us').validate({
+  rules: {
+    user_name: {
+      required: true,
+      minlength: 3
+    },
+    user_phone: {
+      required: true,
+      phoneUS: true
+    },
+    user_email: {
+      required: true,
+      email: true
+    },
+    user_message: {
+      required: true,
+      minlength: 10,
+      maxlength: 500
+    }
+  },
+  submitHandler: function (form) {
+    $('.modal-title').empty();
+    $('.modal-body').empty();
+    $('.modal-title').append('Form Submitted');
+    $('.modal-body').append('Form validated successfully, but actual submission of form is not yet implemented');
+  }
+});
