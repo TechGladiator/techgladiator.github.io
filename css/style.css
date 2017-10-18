@@ -28,6 +28,10 @@ body {
   cursor: pointer;
 }
 
+button.close {
+  cursor: pointer;
+}
+
 
 /*--- Contact Modal ---*/
 
