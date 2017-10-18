@@ -61,6 +61,6 @@ ${button}
 $('body').append(contactModal);
 $('.modal-body').append(contactForm);
 
-$('.contactUs').click(function () {
+$('.contact-us').click(function () {
   $('#contactModal').modal('toggle')
 })
