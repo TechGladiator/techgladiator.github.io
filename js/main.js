@@ -1,5 +1,5 @@
 // build contact modal
-let contactModal = `<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+const contactModal = `<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -15,42 +15,42 @@ let contactModal = `<div class="modal fade" id="contactModal" tabindex="-1" role
     </div>`;
 
 // build contact form
-let form = `<form action=" " id="contact-us" class="contact-form">`;
-let formGroup = `<div class="form-group row">`;
-let label = `<label for="`;
-let controlLabel = `class="col-sm-2 col-form-label">`;
-let colDiv = `<div class="col-sm-10">`;
-let input = `<input type="`
-let formControl = `class="form-control" id="`;
-let formName = `" name="user_`
-let ph = `" placeholder="`
-let unDiv = `</div>
+const form = `<form action=" " id="contact-us" class="contact-form">`;
+const formGroup = `<div class="form-group row">`;
+const label = `<label for="`;
+const controlLabel = `class="col-sm-2 col-form-label">`;
+const colDiv = `<div class="col-sm-10">`;
+const input = `<input type="`
+const formControl = `class="form-control" id="`;
+const formName = `" name="user_`
+const ph = `" placeholder="`
+const unDiv = `</div>
 </div>`
-let name = `${formGroup}
+const name = `${formGroup}
 ${label}name" ${controlLabel}Name:</label>
 ${colDiv}
 ${input}text" ${formControl}name${formName}name${ph}Your Name">
 ${unDiv}`;
-let phone = `${formGroup}
+const phone = `${formGroup}
 ${label}phone" ${controlLabel}Phone:</label>
 ${colDiv}
 ${input}tel" ${formControl}phone${formName}phone${ph}(###)###-####">
 ${unDiv}`;
-let email = `${formGroup}
+const email = `${formGroup}
 ${label}email" ${controlLabel}Email:</label>
 ${colDiv}
 ${input}mail" ${formControl}email${formName}email${ph}you@example.com">
 ${unDiv}`;
-let msg = `${formGroup}
+const msg = `${formGroup}
 ${label}msg" ${controlLabel}Message:</label>
 ${colDiv}
 <textarea ${formControl}msg${formName}message${ph}Max length 500 characters"></textarea>
 ${unDiv}`;
-let button = `${formGroup}
+const button = `${formGroup}
 <div class="col-sm-offset-2 col-sm-10">
 <button type="submit" class="btn btn-lg btn-primary send">Send</button>
 ${unDiv}`;
-let contactForm = `${form}
+const contactForm = `${form}
 ${name}
 ${phone}
 ${email}
