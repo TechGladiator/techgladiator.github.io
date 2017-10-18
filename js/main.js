@@ -58,9 +58,11 @@ ${msg}
 ${button}
 </form>`;
 
+// append contact modal to DOM
 $('body').append(contactModal);
 $('.modal-body').append(contactForm);
 
+// toggle contact modal when clicking 'contact'
 $('.contact-us').click(function () {
   $('#contactModal').modal('toggle')
 })
