@@ -1,71 +1,123 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
 
-    <title>TechGladiator</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+  <title>TechGladiator</title>
 
-    <!-- Custom styles for this template -->
-    <link href="css/cover.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
 
-    <link href="css/style.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/cover.css" rel="stylesheet">
 
-  </head>
+  <link href="css/style.css" rel="stylesheet">
 
-  <body>
+</head>
 
-    <div class="site-wrapper">
+<body>
 
-      <div class="site-wrapper-inner">
+  <div class="site-wrapper">
 
-        <div class="cover-container">
+    <div class="site-wrapper-inner">
 
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">John Stratton <span class="dash">-</span> TechGladiator</h3>
-              <nav class="nav nav-masthead">
-                <a class="nav-link" href="https://github.com/TechGladiator?tab=repositories">Projects</a>
-                <a class="nav-link contact-us">Contact</a>
-              </nav>
-            </div>
+      <div class="cover-container">
+
+        <div class="masthead clearfix">
+          <div class="inner">
+            <h3 class="masthead-brand">John Stratton
+              <span class="dash">-</span> TechGladiator</h3>
+            <nav class="nav nav-masthead">
+              <a class="nav-link" href="https://github.com/TechGladiator?tab=repositories">Projects</a>
+              <a class="nav-link contact-us">Contact</a>
+            </nav>
           </div>
+        </div>
 
-          <div class="inner cover">
-            <h1 class="cover-heading">On The Front End</h1>
-            <p class="lead">Battling his way through the code for you!</p>
-            <p class="lead">
-              <a href="https://github.com/TechGladiator" class="btn btn-lg btn-secondary">Learn more</a>
-            </p>
+        <div class="inner cover">
+          <h1 class="cover-heading">On The Front End</h1>
+          <p class="lead">Battling his way through the code for you!</p>
+          <p class="lead">
+            <a href="https://github.com/TechGladiator" class="btn btn-lg btn-secondary">Learn more</a>
+          </p>
+        </div>
+
+        <div class="mastfoot">
+          <div class="inner">
+            <p>&copy; 2017 John Stratton</p>
           </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>&copy; 2017 John Stratton</p>
-            </div>
-          </div>
-
         </div>
 
       </div>
 
     </div>
 
-    <!-- Bootstrap core JavaScript
+  </div>
+
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <h4 class="modal-title" id="contactModalLabel">Contact Form</h4>
+        </div>
+        <div class="modal-body">
+          <form action="https://docs.google.com/forms/d/e/1FAIpQLSc76roA4XJbBvVE9jJZhT72ifH_h-RF1FVMzt9X6yv3ZqgEYA/viewform?usp=pp_url&amp;entry.1984953937=name&amp;entry.548109357=5555555555&amp;entry.223831546=any@email.address&amp;entry.918310549=a+proper+message"
+            method="post" id="contact-us" class="contact-form" novalidate="novalidate">
+            <div class="form-group row">
+              <label for="name" class="col-sm-2 col-form-label">Name:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" name="user_name" placeholder="Your Name">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="phone" class="col-sm-2 col-form-label">Phone:</label>
+              <div class="col-sm-10">
+                <input type="tel" class="form-control" id="phone" name="user_phone" placeholder="(###)###-####">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="email" class="col-sm-2 col-form-label">Email:</label>
+              <div class="col-sm-10">
+                <input type="mail" class="form-control" id="email" name="user_email" placeholder="you@example.com">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="msg" class="col-sm-2 col-form-label">Message:</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" id="msg" name="user_message" placeholder="Max length 500 characters"></textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-lg btn-primary send">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/additional-methods.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/additional-methods.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
