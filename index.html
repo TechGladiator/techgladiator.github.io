@@ -69,30 +69,29 @@
           <h4 class="modal-title" id="contactModalLabel">Contact Form</h4>
         </div>
         <div class="modal-body">
-          <form action="https://docs.google.com/forms/d/e/1FAIpQLSc76roA4XJbBvVE9jJZhT72ifH_h-RF1FVMzt9X6yv3ZqgEYA/viewform?usp=pp_url&amp;entry.1984953937=name&amp;entry.548109357=5555555555&amp;entry.223831546=any@email.address&amp;entry.918310549=a+proper+message"
-            method="post" id="contact-us" class="contact-form" novalidate="novalidate">
+          <form action="https://docs.google.com/forms/d/e/1FAIpQLSc76roA4XJbBvVE9jJZhT72ifH_h-RF1FVMzt9X6yv3ZqgEYA/formResponse?" target="hidden_iframe" onsubmit="submitted=true" id="contact-us" class="contact-form" novalidate="novalidate">
             <div class="form-group row">
               <label for="name" class="col-sm-2 col-form-label">Name:</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="name" name="user_name" placeholder="Your Name">
+                <input type="text" class="form-control" id="name" name="entry.1984953937" placeholder="Your Name">
               </div>
             </div>
             <div class="form-group row">
               <label for="phone" class="col-sm-2 col-form-label">Phone:</label>
               <div class="col-sm-10">
-                <input type="tel" class="form-control" id="phone" name="user_phone" placeholder="(###)###-####">
+                <input type="tel" class="form-control" id="phone" name="entry.548109357" placeholder="(###)###-####">
               </div>
             </div>
             <div class="form-group row">
               <label for="email" class="col-sm-2 col-form-label">Email:</label>
               <div class="col-sm-10">
-                <input type="mail" class="form-control" id="email" name="user_email" placeholder="you@example.com">
+                <input type="mail" class="form-control" id="email" name="entry.223831546" placeholder="you@example.com">
               </div>
             </div>
             <div class="form-group row">
               <label for="msg" class="col-sm-2 col-form-label">Message:</label>
               <div class="col-sm-10">
-                <textarea class="form-control" id="msg" name="user_message" placeholder="Max length 500 characters"></textarea>
+                <textarea class="form-control" id="msg" name="entry.918310549" placeholder="Max length 500 characters"></textarea>
               </div>
             </div>
             <div class="form-group row">
@@ -118,6 +117,7 @@
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/additional-methods.min.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 
 </html>
